@@ -178,23 +178,42 @@ Input as per developer. This is currently being tested.
 ```json
 {
     "properties": {
-        "FRUITING_CYCLE_END_DATE": "2019-11-20",
+        "FRUITING_CYCLE_END_DATE": "2020-2-2",
         "IS_ACTIVE": "Yes",
-        "HECTARES": 1.5522645196199416,
-        "APPLICATION_BLOCK_CODE": "A3",
-        "PLANT_YEAR_GROUPING": 2016,
-        "PLANTING_DATE": "2019-11-20",
+        "HECTARES": 1.25,
+        "APPLICATION_BLOCK_CODE": "A1",
+        "PLANT_YEAR_GROUPING": 2020,
+        "PLANTING_DATE": "2020-1-01",
         "VARIETY": "KIRRA",
-        "BERRY_TYPE": "BLUE",
+        "BERRY_TYPE": "RASP",
         "VARIETY_ID": "V9J",
 ```
 
 ----
 
+| Agrian UI             | JSON                  | Example               |
+| -----------------     | -----------------     | -----------------     |
+| Season Start          |                       |                       |
+| Season End            |                       |                       |
+| Commodity             |                       |                       |
+| Variety               |                       |                       |
+| Name                  |                       | A12020KIRRA           |
+| Code                  |                       | A12020KIRRA           |
+| Field                 |                       |                       |
+| Date Planted          |                       | 01/01/2020            |
+| Planting Size         |                       | 1.25                  |
+| Traits                |                       |                       |
+| Growing Medium        |                       |                       |
+| Planting Method       |                       |                       |
+| Growing Method        |                       |                       |
+| Tillage Type          |                       |                       |
+| Intended Use          |                       |                       |
+| Status                |                       |                       |
+| Latitude              |                       | 19.31527              |
+| Longitude             |                       | -103.3715579631513    |
+
 #### **NOTES**
 
 - As of right now County & States are only applicable to Mexico. Work is being done on US IDs; they will be genrated based on the incoming Atlas payload.
 
-- Updating Farms & Fields is not yet ready.
-
-- Creating & Updating Plantings are being tested.
+- Updating Farms, Fields, & Plantings is not yet ready.
