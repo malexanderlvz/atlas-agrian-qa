@@ -212,9 +212,9 @@ Input as per developer. This is currently being tested.
 | Latitude              |                       | 19.31527              |
 | Longitude             |                       | -103.3715579631513    |
 
-- Seems set to `19.315073` by default
+- Seems Latitude is set to `19.315073` by default
 
-- Seems set to `-103.371444` by default
+- Seems Longitude is set to `-103.371444` by default
 
 #### **NOTES**
 
