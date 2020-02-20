@@ -197,11 +197,11 @@ Input as per developer. This is currently being tested.
 | Season End            |                       |                       |
 | Commodity             |                       |                       |
 | Variety               |                       |                       |
-| Name                  |                       | A12020KIRRA           |
-| Code                  |                       | A12020KIRRA           |
+| Name | APPLICATION_BLOCK_CODE + PLANT_YEAR_GROUPING + VARIETY | A12020KIRRA |
+| Code | APPLICATION_BLOCK_CODE + PLANT_YEAR_GROUPING + VARIETY | A12020KIRRA |
 | Field                 |                       |                       |
-| Date Planted          |                       | 01/01/2020            |
-| Planting Size         |                       | 1.25                  |
+| Date Planted          | PLANTING_DATE         | 01/01/2020            |
+| Planting Size         | HECTARES              | 1.25                  |
 | Traits                |                       |                       |
 | Growing Medium        |                       |                       |
 | Planting Method       |                       |                       |
@@ -211,6 +211,10 @@ Input as per developer. This is currently being tested.
 | Status                |                       |                       |
 | Latitude              |                       | 19.31527              |
 | Longitude             |                       | -103.3715579631513    |
+
+- Seems set to `19.315073` by default
+
+- Seems set to `-103.371444` by default
 
 #### **NOTES**
 
