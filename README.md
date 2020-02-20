@@ -189,8 +189,6 @@ Input as per developer. This is currently being tested.
         "VARIETY_ID": "V9J",
 ```
 
-----
-
 | Agrian UI             | JSON                  | Example               |
 | -----------------     | -----------------     | -----------------     |
 | Season Start          |                       |                       |
