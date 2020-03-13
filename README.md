@@ -10,7 +10,7 @@ Supported functionality as of `3/12/2020` testing
 * [Create Farm](#create-farm)
 * [Create Field](#create-field)
 * [Update Field](#update-field)
-* [Create Plantings](#create-planting)
+* [Create Planting](#create-planting)
 
 ## **Create Grower**
 
@@ -40,7 +40,7 @@ To create a new Grower change the following fields
 
 ### **Results**
 
-**Results based on [0_grower-create.json](json/0_grower-create.json) input.**
+**Results based on [0_grower-create.json](json/0_grower-create.json?raw=true) input.**
 
 | Agrian UI         |   JSON                | Results            |
 | ----------------- | -----------------     | -------------------|
@@ -87,7 +87,7 @@ To update a Grower leave the existing `COMPANY_NAME` of the Grower you'd like to
 ```
 ### **Results**
 
-**Results based on [1_grower-update.json](json/1_grower-update.json) input.**
+**Results based on [1_grower-update.json](json/1_grower-update.json?raw=true) input.**
 
 | Agrian UI         |   JSON Varible        | Old Results           | Updated Results       |
 | ----------------- | -----------------     | -----------------     | -----------------     |
@@ -121,7 +121,7 @@ To create a new Farm leave the existing `COMPANY_NAME` & change
 ```
 ### **Results**
 
-**Results based on [2_farm-create.json](json/2_farm-create.json) input.**
+**Results based on [2_farm-create.json](json/2_farm-create.json?raw=true) input.**
 
 
 | Agrian UI         |   JSON                | Results               |
@@ -156,7 +156,7 @@ To create a new Field leave the existing `COMPANY_NAME` & `RANCH_NAME` and chang
 ````
 ### **Results**
 
-**Results based on [3_field-create.json](json/3_field-create.json) input.**
+**Results based on [3_field-create.json](json/3_field-create.json?raw=true) input.**
 
 | Agrian UI             | JSON                       | Results               |
 | -----------------     | -----------------          | -----------------     |
@@ -200,7 +200,7 @@ To update an existing Field leave the existing `COMPANY_NAME` & `RANCH_NAME` and
 
 ### **Results**
 
-**Results based on [4_field-update.json](json/4_field-update.json) input.**
+**Results based on [4_field-update.json](json/4_field-update.json?raw=true) input.**
 
 | Agrian UI             | JSON                       | Old Results           | Updated Results      |
 | -----------------     | -----------------          | -----------------     | -----------------    |
@@ -224,5 +224,5 @@ To update an existing Field leave the existing `COMPANY_NAME` & `RANCH_NAME` and
 ![field-update-1](/screenshots/4_field-update-1.png?raw=true)
 ![field-update-2](/screenshots/4_field-update-2.png?raw=true)
 
-## **PLANTINGS**
+## **Create Planting**
 Testing...
