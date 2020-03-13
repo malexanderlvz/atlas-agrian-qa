@@ -10,7 +10,7 @@ Supported functionality as of `3/12/2020` testing
 * [Create Farm](#create-farm)
 * [Create Field](#create-field)
 * [Update Field](#update-field)
-* [Create Planting](#create-planting)
+* [Create Plantings](#create-planting)
 
 ## **Create Grower**
 
@@ -108,7 +108,7 @@ To update a Grower leave the existing `COMPANY_NAME` of the Grower you'd like to
 ![grower-update-1](/screenshots/1_grower-update-1.png?raw=true)
 ![grower-update-2](/screenshots/1_grower-update-2.png?raw=true)
 
-## **Create New Farm**
+## **Create Farm**
 
 To create a new Farm leave the existing `COMPANY_NAME` & change
 
@@ -135,7 +135,7 @@ To create a new Farm leave the existing `COMPANY_NAME` & change
 ![farm-create-0](/screenshots/2_farm-create-0.png?raw=true)
 ![farm-create-1](/screenshots/2_farm-create-1.png?raw=true)
 
-## **Create New Field**
+## **Create Field**
 
 To create a new Field leave the existing `COMPANY_NAME` & `RANCH_NAME` and change
 
@@ -224,6 +224,48 @@ To update an existing Field leave the existing `COMPANY_NAME` & `RANCH_NAME` and
 ![field-update-1](/screenshots/4_field-update-1.png?raw=true)
 ![field-update-2](/screenshots/4_field-update-2.png?raw=true)
 
-## **CREATE PLANTING**
+## **PLANTINGS**
 
-### ***Testing...***
+**Input as per developer. This is currently being tested.
+
+```json
+{
+    "properties": {
+        "GDB_FROM_DATE": "2020-02-25T09:06:11",
+        "IS_ACTIVE": "No",
+        "HECTARES": 1.25,
+        "APPLICATION_BLOCK_CODE": "A1",
+        "PLANT_YEAR_GROUPING": 2020,
+        "PLANTING_DATE": "2020-1-01",
+        "VARIETY": "KIRRA",
+        "BERRY_TYPE": "RASP",
+        "VARIETY_ID": "V9J"
+```
+
+| Agrian UI             | JSON                  | Example               |
+| -----------------     | -----------------     | -----------------     |
+| Season Start          |                       |                       |
+| Season End            | GDB_FROM_DATE         | 2020                  |
+| Commodity             |                       |                       |
+| Variety               |                       |                       |
+| Name | APPLICATION_BLOCK_CODE + PLANT_YEAR_GROUPING + VARIETY | A12020KIRRA |
+| Code | APPLICATION_BLOCK_CODE + PLANT_YEAR_GROUPING + VARIETY | A12020KIRRA |
+| Field                 |                       |                       |
+| Date Planted          | PLANTING_DATE         | 01/01/2020            |
+| Planting Size         | HECTARES              | 1.25                  |
+| Traits                |                       |                       |
+| Growing Medium        |                       |                       |
+| Planting Method       |                       |                       |
+| Growing Method        |                       |                       |
+| Tillage Type          |                       |                       |
+| Intended Use          |                       |                       |
+| Status                |                       |                       |
+| Latitude              |                       | 19.31527              |
+| Longitude             |                       | -103.3715579631513    |
+
+#### **NOTES**
+
+* As of right now County & States are only applicable to Mexico. Work is being done on US IDs; they will be genrated based on the incoming Atlas payload.
+
+* Updating Farms, Fields, & Plantings is not yet ready.
+**
