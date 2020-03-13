@@ -10,7 +10,7 @@ Supported functionality as of `3/12/2020` testing
 * [Create Farm](#create-farm)
 * [Create Field](#create-field)
 * [Update Field](#update-field)
-* [Create Plantings](#create-planting)
+* [Create Planting](#create-planting)
 
 ## **Create Grower**
 
