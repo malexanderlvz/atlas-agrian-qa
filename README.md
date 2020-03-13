@@ -224,6 +224,6 @@ To update an existing Field leave the existing `COMPANY_NAME` & `RANCH_NAME` and
 ![field-update-1](/screenshots/4_field-update-1.png?raw=true)
 ![field-update-2](/screenshots/4_field-update-2.png?raw=true)
 
-## **PLANTINGS**
+## **CREATE PLANTINGS**
 
 ### ***Testing...***
