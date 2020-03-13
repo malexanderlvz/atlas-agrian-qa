@@ -225,47 +225,4 @@ To update an existing Field leave the existing `COMPANY_NAME` & `RANCH_NAME` and
 ![field-update-2](/screenshots/4_field-update-2.png?raw=true)
 
 ## **PLANTINGS**
-
-**Input as per developer. This is currently being tested.
-
-```json
-{
-    "properties": {
-        "GDB_FROM_DATE": "2020-02-25T09:06:11",
-        "IS_ACTIVE": "No",
-        "HECTARES": 1.25,
-        "APPLICATION_BLOCK_CODE": "A1",
-        "PLANT_YEAR_GROUPING": 2020,
-        "PLANTING_DATE": "2020-1-01",
-        "VARIETY": "KIRRA",
-        "BERRY_TYPE": "RASP",
-        "VARIETY_ID": "V9J"
-```
-
-| Agrian UI             | JSON                  | Example               |
-| -----------------     | -----------------     | -----------------     |
-| Season Start          |                       |                       |
-| Season End            | GDB_FROM_DATE         | 2020                  |
-| Commodity             |                       |                       |
-| Variety               |                       |                       |
-| Name | APPLICATION_BLOCK_CODE + PLANT_YEAR_GROUPING + VARIETY | A12020KIRRA |
-| Code | APPLICATION_BLOCK_CODE + PLANT_YEAR_GROUPING + VARIETY | A12020KIRRA |
-| Field                 |                       |                       |
-| Date Planted          | PLANTING_DATE         | 01/01/2020            |
-| Planting Size         | HECTARES              | 1.25                  |
-| Traits                |                       |                       |
-| Growing Medium        |                       |                       |
-| Planting Method       |                       |                       |
-| Growing Method        |                       |                       |
-| Tillage Type          |                       |                       |
-| Intended Use          |                       |                       |
-| Status                |                       |                       |
-| Latitude              |                       | 19.31527              |
-| Longitude             |                       | -103.3715579631513    |
-
-#### **NOTES**
-
-* As of right now County & States are only applicable to Mexico. Work is being done on US IDs; they will be genrated based on the incoming Atlas payload.
-
-* Updating Farms, Fields, & Plantings is not yet ready.
-**
+Testing...
