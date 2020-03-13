@@ -1,0 +1,214 @@
+{
+
+    "type": "FeatureCollection",
+
+    "features": [
+
+      {
+
+        "type": "Feature",
+
+        "id": 401,
+
+        "geometry": {
+
+          "type": "Polygon",
+
+          "coordinates": [
+
+            [
+
+              [
+
+                30.671727785877,
+
+                -115.936875789182
+
+              ]
+
+            ]
+
+          ]
+
+        },
+
+        "attributes": {
+
+          "OBJECTID": 401,
+
+          "GDB_FROM_DATE": "2020-02-25T09:06:11",
+
+          "REGION_NAME": "Baja",
+
+          "DISTRICT_NAME": "Baja",
+
+          "PRODUCING_AREA_NAME": "San Quintin",
+
+          "PRODUCING_AREA_NUMBER": 20,
+
+          "COMPANY_NAME": "13 Disney Test",
+
+          "TRANSACTIONAL_RANCH_NUMBER": 9787,
+
+          "TRANSACTIONAL_RANCH_NAME": "Fckino Org",
+
+          "BUSINESS_MODEL_GROUP": "NONE",
+
+          "CUSTOMS_NAME": "Fckino Org",
+
+          "ORGANIC_PARCEL_NUMBER": "36",
+
+          "TRN_START_DATE": "2016-10-24T07:00:00",
+
+          "TRN_END_DATE": "2018-03-29T07:00:00",
+
+          "APPLICATION_BLOCK_NAME": "Puebla",
+
+          "APPLICATION_BLOCK_CODE": "A1",
+
+          "DSA_PORTION": "",
+
+          "TRANSFERRED": "No",
+
+          "IS_ACTIVE": "No",
+
+          "DESTROYED_DATE": "4/11/2017 7:00:00 AM",
+
+          "TREATMENT_START_DATE": "",
+
+          "BERRY_TYPE": "STRAW",
+
+          "VARIETY": "MARQUIS",
+
+          "VARIETY_ID": "V6N",
+
+          "PLANT_TYPE": "Trim",
+
+          "PLANTING_DATE": "8/20/2016 5:43:02 PM",
+
+          "IS_IN_GROUND": "Yes",
+
+          "IS_EXCLUSIVE": "Yes",
+
+          "PLANT_YEAR_GROUPING": 2016,
+
+          "PERCENT_DIE_OUT": "",
+
+          "PLANT_SPACING": 35.56,
+
+          "BED_WIDTH": 101.6,
+
+          "DENSITY_PLANTING_RATE": "",
+
+          "ROWS_PER_BED": 2,
+
+          "NUMBER_OF_PLANTS": "",
+
+          "MICROCLIMATE_NAME": "",
+
+          "MEDIA": "Soil",
+
+          "GROWER_NUMBER": 333333,
+
+          "RANCH_NAME": "Seven Eight #9",
+
+          "RANCH_LATITUDE": 37.415178,
+          
+          "RANCH_LONGITUDE": -122.077237,
+
+          "ORGANIC_CERTIFICATION_DATE": "",
+
+          "ORGANIC_TRANSITION_DATE": "",
+
+          "ORGANIC_CDFA_NUMBER": "",
+
+          "ORGANIC_OCA_ID": "",
+
+          "RCH_START_DATE": "2016-08-20T07:00:00",
+
+          "RCH_END_DATE": "2018-09-20T07:00:00",
+
+          "RCH_STREET_ADDRESS": "1401 N Shoreline Blvd",
+
+          "RCH_STREET_ADDRESS_2": "OFC #33",
+
+          "RCH_LOCALITY": "Mountain View",
+
+          "RCH_ADMINISTRATIVE_AREA": "Baja California",
+
+          "RCH_POSTAL_CODE": "94043",
+
+          "RCH_COUNTRY": "MEX",
+
+          "RCH_SUBMIT_DISTRICT": "No",
+
+          "ORGANIC_CERTIFICATION_AGENCY": "",
+
+          "FIELD_TYPE": "ORGANIC",
+
+          "PROTECTION_TYPE": "HOOPED",
+
+          "TUNNEL_DIAMETER": "",
+
+          "BEDS_PER_TUNNEL": "",
+
+          "TREATMENT_TYPE": "NEW PLANTING",
+
+          "TREATMENT_NOTES": "TEST CHANGE",
+
+          "PRODUCTION_CYCLE_NUMBER": "",
+
+          "FRUITING_CYCLE_START_DATE": "",
+
+          "FRUITING_CYCLE_END_DATE": "",
+
+          "NURSERY_CODE": "",
+
+          "APP_NOTES": "",
+
+          "UID": "9787A1",
+
+          "COLD_STORAGE": "No",
+
+          "COLD_STORAGE_LOCATION": "",
+
+          "LATERALS_PER_METER": "",
+
+          "ACRES": 4.79489139186864,
+
+          "HECTARES": 1.94042370123863,
+
+          "CROP_ID": "",
+
+          "FAIR_TRADE_ID": "1229316",
+
+          "FAIR_TRADE_ELIGIBLE": "Yes",
+
+          "CS_DATE": "",
+
+          "SURVEYOR": "EM",
+
+          "POT_SIZE": "",
+
+          "POT_SHADING_TYPE": "",
+
+          "GROWER_GROUP_NAME": "RAC",
+
+          "SURVEY_DATE": "1/3/2017 4:35:12 PM",
+
+          "COPIED_FROM": "",
+
+          "REVIEW_YEAR": "2017",
+
+          "BLK_CENTROID_LATITUDE": 30.671727785877,
+
+          "BLK_CENTROID_LONGITUDE": -115.936875789182,
+
+          "CALCULATED_NUMBER_PLANTS": 107417
+
+        }
+
+      }
+
+    ]
+}

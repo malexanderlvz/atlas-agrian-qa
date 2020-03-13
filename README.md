@@ -1,221 +1,217 @@
 
-# Atlas/Agrian Intergration API Examples
+# Atlas/Agrian Intergration
 
-The file `atlas-exp-body.json` contains a example input body.
+**NOTE:** The existing functionality was developed based off the provided Agrian documentation.
 
-We must still include the following top portion of our JSON body, even though we're only changing the "Properties".
+Supported functionality as of `3/13/2020` testing
 
-```json
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-        "type": "Feature",
-        "id": 37601,
-        "geometry": {...
-        },
-```
+* [Create Grower](#create-grower)
+* [Update Grower](#update-grower)
+* [Create Farm](#create-farm)
+* [Create Field](#create-field)
+* [Update Field](#update-field)
+* [Create Plantings](#create-planting)
 
-## **Create a new Grower**
+## **Create Grower**
 
-- Change `COMPANY_NAME` to a desired Grower Name
-- Change `GROWER_NUMBER` to a unique Grower Account Number
-- Change `RCH_STREET_ADDRESS` to a desired Grower Street 1
-- Change `RCH_STREET_ADDRESS_2` to a desired Grower Street 2
-- Change `RCH_LOCALITY` to a desired Grower City
-- Change `RCH_POSTAL_CODE` to a desitred Grower Postal Code
-- Change `RANCH_LATITUDE` to a desired Grower Location Latitude
-- Change `RANCH_LONGITUDE` to a desired Grower Location Longitude
+To create a new Grower change the following fields
+
+* `COMPANY_NAME`
+* `GROWER_NUMBER`
+* `RCH_STREET_ADDRESS`
+* `RCH_STREET_ADDRESS_2`
+* `RCH_LOCALITY`
+* `RCH_POSTAL_CODE`
+* `RANCH_LATITUDE`
+* `RANCH_LONGITUDE`
 
 ```json
 {
     "properties": {
-        "COMPANY_NAME": "Test Grower Name, LLC",
-        "GROWER_NUMBER": 999101,
-        "RCH_STREET_ADDRESS": "2310 S Forbes Rd",
-        "RCH_STREET_ADDRESS_2": "#1",
-        "RCH_LOCALITY": "Plant City",
-        "RCH_POSTAL_CODE": "33566",
-        "RANCH_LATITUDE": 27.987167575000058,
-        "RANCH_LONGITUDE": -82.187056261999942,
+        "COMPANY_NAME": "13 Disney Test",
+        "GROWER_NUMBER": 777777,
+        "RCH_STREET_ADDRESS": "1313 Disneyland Dr",
+        "RCH_STREET_ADDRESS_2": "APT #13",
+        "RCH_LOCALITY": "Anaheim",
+        "RCH_POSTAL_CODE": "92802",
+        "RANCH_LATITUDE": 33.812137,
+        "RANCH_LONGITUDE": -117.918967,
 ```
 
-### **Grower**
+**Results based on [0_grower-create.json](json/0_grower-create.json) input.**
 
-| Agrian UI         |   JSON                | Example               |
-| ----------------- | -----------------     | -----------------     |
-| Name              | COMPANY_NAME          | Test Grower Name, LLC |
-| Code              | COMPANY_NAME          | Test Grower Name, LLC |
-| Account Number    | GROWER_NUMBER         | 999101                |
-| Status            |                       | Active                |
-| Country           |                       | Mexico                |
-| Street 1          | RCH_STREET_ADDRESS    | 2310 S Forbes Rd      |
-| Street 2          | RCH_STREET_ADDRESS_2  | Room 207              |
-| City              | RCH_LOCALITY          | Plant City            |
-| State / Province  |                       | Jalisco               |
-| Postal Code       | RCH_POSTAL_CODE       | 33566                 |
-| Latitude          | RANCH_LATITUDE        | 27.987167575000058    |
-| Longitude         | RANCH_LONGITUDE       | -82.187056261999942   |
+| Agrian UI         |   JSON                | Results            |
+| ----------------- | -----------------     | -------------------|
+| Name              | COMPANY_NAME          | 13 Disney Test     |
+| Code              | GROWER_NUMBER         | 777777             |
+| Account Number    | GROWER_NUMBER         | 777777             |
+| Status            |                       | Active             |
+| Country           |                       | Brazil             |
+| Street 1          | RCH_STREET_ADDRESS    | 1313 Disneyland Dr |
+| Street 2          | RCH_STREET_ADDRESS_2  | APT #13            |
+| City              | RCH_LOCALITY          | Anaheim            |
+| State / Province  |                       |                    |
+| Postal Code       | RCH_POSTAL_CODE       | 92802              |
+| Latitude          | RANCH_LATITUDE        | 33.812137          |
+| Longitude         | RANCH_LONGITUDE       | -117.918967        |
 
-## **Update Existing Grower**
+![grower-create-0](/screenshots/0_grower-create-0.png?raw=true)
+![grower-create-1](/screenshots/0_grower-create-1.png?raw=true)
+![grower-create-2](/screenshots/0_grower-create-2.png?raw=true)
 
-Enter the existing `GROWER_NUMBER` of the Grower you'd like to update; in this example we kept it the same.
+## **Update Grower**
 
-Change any of the following fields to update your Grower:
+To update a Grower leave the existing `COMPANY_NAME` of the Grower you'd like to update & change the following fields
 
-- `COMPANY_NAME`
-- `RCH_STREET_ADDRESS`
-- `RCH_STREET_ADDRESS_2`
-- `RCH_LOCALITY`
-- `RCH_POSTAL_CODE`
-- `RANCH_LATITUDE`
-- `RANCH_LONGITUDE`
+* `COMPANY_NAME`
+* `RCH_STREET_ADDRESS`
+* `RCH_STREET_ADDRESS_2`
+* `RCH_LOCALITY`
+* `RCH_POSTAL_CODE`
+* `RANCH_LATITUDE`
+* `RANCH_LONGITUDE`
 
 ```json
 {
     "properties": {
-        "COMPANY_NAME": "New Name, LLC",
-        "GROWER_NUMBER": 999101,
-        "RCH_STREET_ADDRESS": "1234 New Way Rd.",
-        "RCH_STREET_ADDRESS_2": "OFC #321",
-        "RCH_LOCALITY": "New City",
-        "RCH_POSTAL_CODE": "12345",
-        "RANCH_LATITUDE": 33.812511,
-        "RANCH_LONGITUDE": -117.918976,
+        "COMPANY_NAME": "13 Disney Test",
+        "GROWER_NUMBER": 333333,
+        "RCH_STREET_ADDRESS": "1401 N Shoreline Blvd",
+        "RCH_STREET_ADDRESS_2": "OFC #33",
+        "RCH_LOCALITY": "Mountain View",
+        "RCH_POSTAL_CODE": "94043",
+        "RANCH_LATITUDE": 37.415178,
+        "RANCH_LONGITUDE": -122.077237,
 ```
 
-### **Grower**
+**Results based on [1_grower-update.json](json/1_grower-update.json) input.**
 
-| Agrian UI         |   JSON Varible        | Old Fields            | Updated Example       |
+| Agrian UI         |   JSON Varible        | Old Results           | Updated Results       |
 | ----------------- | -----------------     | -----------------     | -----------------     |
-| Name              | COMPANY_NAME          | Test Grower Name, LLC | New Name, LLC         |
-| Code              | COMPANY_NAME          | Test Grower Name, LLC | New Name, LLC         |
-| Account Number    | GROWER_NUMBER         | 999101                | 999101                |
+| Name              | COMPANY_NAME          | 13 Disney Test        | 13 Disney Test        |
+| Code              | GROWER_NUMBER         | 777777                | 333333                |
+| Account Number    | GROWER_NUMBER         | 777777                | 333333                |
 | Status            |                       | Active                | Active                |
-| Country           |                       | Mexico                | Mexico                |
-| Street 1          | RCH_STREET_ADDRESS    | 2310 S Forbes Rd      | 1234 New Way Rd.      |
-| Street 2          | RCH_STREET_ADDRESS_2  | ROOM #207             | OFC #321              |
-| City              | RCH_LOCALITY          | Plant City            | New City              |
-| State / Province  |                       | Jalisco               | Jalisco               |
-| Postal Code       | RCH_POSTAL_CODE       | 33566                 | 12345                 |
-| Latitude          | RANCH_LATITUDE        | 27.987167575000058    | 33.812511             |
-| Longitude         | RANCH_LONGITUDE       | -82.187056261999942   | -117.918976           |
+| Country           |                       | Brazil                | Brazil                |
+| Street 1          | RCH_STREET_ADDRESS    | 1313 Disneyland Dr    | 1401 N Shoreline Blvd |
+| Street 2          | RCH_STREET_ADDRESS_2  | APT #13               | OFC #33               |
+| City              | RCH_LOCALITY          | Anaheim               | Mountain View         |
+| State / Province  |                       |                       |                       |
+| Postal Code       | RCH_POSTAL_CODE       | 92802                 | 94043                 |
+| Latitude          | RANCH_LATITUDE        | 33.812137             | 37.415178             |
+| Longitude         | RANCH_LONGITUDE       | -117.918967           | -122.077237           |
 
-## **Create a new Farm**
+![grower-update-0](/screenshots/1_grower-update-0.png?raw=true)
+![grower-update-1](/screenshots/1_grower-update-1.png?raw=true)
+![grower-update-2](/screenshots/1_grower-update-2.png?raw=true)
 
-After your Grower is created, create a new Farm by setting a uniuqe `RANCH_NAME`.
+## **Create New Farm**
+
+To create a new Farm leave the existing `COMPANY_NAME` & change
+
+* `RANCH_NAME`
 
 ```json
 {
     "properties": {
-        "RANCH_NAME": "Test Ranch #1",
+        "RANCH_NAME": "Seven Eight #9",
 ```
 
-### **Farm**
+**Results based on [2_farm-create.json](json/2_farm-create.json) input.**
 
-| Agrian UI         |   JSON                | Example               |
+
+| Agrian UI         |   JSON                | Results               |
 | ----------------- | -----------------     | -----------------     |
-| Name              | RANCH_NAME            | Test Ranch #1         |
-| Code              | RANCH_NAME            | Test Ranch #1         |
+| Name              | RANCH_NAME            | Seven Eight #9        |
+| Code              | RANCH_NAME            | Seven Eight #9        |
 | Status            |                       | Active                |
 | Latitude          |                       |                       |
 | Longitude         |                       |                       |
 
-## **Creating New Field**
+![farm-create-0](/screenshots/2_farm-create-0.png?raw=true)
+![farm-create-1](/screenshots/2_farm-create-1.png?raw=true)
 
-After your Ranch is created, enter a unique `CUSTOMS_NAME` to create a new Field.
+## **Create New Field**
 
-### **WORKING**
+To create a new Field leave the existing `COMPANY_NAME` & `RANCH_NAME` and change
+
+* `TRANSACTIONAL_RANCH_NAME`
+* `TRANSACTIONAL_RANCH_NUMBER`
+* `HECTARES`
+* `RANCH_LATITUDE`
+* `RANCH_LONGITUDE`
 
 ```json
 {
     "properties": {
-        "CUSTOMS_NAME": "WP20",
+        "TRANSACTIONAL_RANCH_NAME": "LeftField Test #1",
+        "TRANSACTIONAL_RANCH_NUMBER": 1313,
+        "HECTARES": 1.94042370123863,
+        "RANCH_LATITUDE": 37.415178,
+        "RANCH_LONGITUDE": -122.077237,
 ````
 
-### **NEEDS WORK**
+**Results based on [3_field-create.json](json/3_field-create.json) input.**
+
+| Agrian UI             | JSON                       | Results               |
+| -----------------     | -----------------          | -----------------     |
+| Name                  | TRANSACTIONAL_RANCH_NAME   | LeftField Test #1     |
+| Code                  | TRANSACTIONAL_RANCH_NUMBER | 1313                  |
+| Field Size            | HECTARES                   | 1.94042370123863      |
+| Status                |                            | Active                |
+| Growing Method        |                            | Conventional          |
+| State / Province      |                            | Acre                  |
+| County                |                            |                       |
+| Location Description  |                            |                       |
+| Latitude              | RANCH_LATITUDE             | 37.415178             |
+| Longitude             | RANCH_LONGITUDE            | -122.077237           |
+| Section               |                            |                       |
+| Township              |                            |                       |
+| Range                 |                            |                       |
+| Baseline              |                            |                       |
+| Commodity             |                            | Raspberry             |
+
+![field-create-0](/screenshots/3_field-create-0.png?raw=true)
+![field-create-1](/screenshots/3_field-create-1.png?raw=true)
+![field-create-2](/screenshots/3_field-create-2.png?raw=true)
+
+## **Update Field**
+
+To update an existing Field leave the existing `COMPANY_NAME` & `RANCH_NAME` and change
+
+* `TRANSACTIONAL_RANCH_NUMBER`
+* `HECTARES`
+* `RANCH_LATITUDE`
+* `RANCH_LONGITUDE`
 
 ```json
 {
     "properties": {
-        "RANCH_LATITUDE": 33.812511,
-        "RANCH_LONGITUDE": -117.918976,
-        "MEDIA": "Conventional",
-        "HECTARES": 2.42,
-```
+        "TRANSACTIONAL_RANCH_NUMBER": 7777,
+        "HECTARES": 5.1,
+        "RANCH_LATITUDE": 37.233333,
+        "RANCH_LONGITUDE": -115.808333,
+````
 
-- Changing **RANCH_LATITUDE** doesn't seem to affect **Latitude**</br>...it seems set to `19.315073` by default
+**Results based on `4_field-update.json` input.**
 
-- Changing **RANCH_LONGITUDE** doesn't seem to affect **Logitude**</br>...it seems set to `-103.371444` by default
-
-- Changing **MEDIA** doesn't seem to affect **Growing Method**</br>...it seems set to `Conventional` by default
-
-- Changing **HECTARES** doesn't seem to affect **Field Size**</br> ...it seems set to `2.42` by default
-
-### **Field**
-
-| Agrian UI             | JSON                  | Example               |
-| -----------------     | -----------------     | -----------------     |
-| Name                  | CUSTOMS_NAME          | WP20                  |
-| Code                  | CUSTOMS_NAME          | WP20                  |
-| Field Size            |                       | 2.42                  |
-| Status                |                       | Active                |
-| Growing Method        |                       | Conventional          |
-| State / Province      |                       | Jalisco               |
-| County                |                       |                       |
-| Location Description  |                       |                       |
-| Latitude              |                       | 19.315073             |
-| Longitude             |                       | -103.371444           |
-| Section               |                       |                       |
-| Township              |                       |                       |
-| Range                 |                       |                       |
-| Baseline              |                       |                       |
-
-### **PLANTINGS**
-
-Input as per developer. This is currently being tested.
-
-```json
-{
-    "properties": {
-        "FRUITING_CYCLE_END_DATE": "2020-2-2",
-        "IS_ACTIVE": "Yes",
-        "HECTARES": 1.25,
-        "APPLICATION_BLOCK_CODE": "A1",
-        "PLANT_YEAR_GROUPING": 2020,
-        "PLANTING_DATE": "2020-1-01",
-        "VARIETY": "KIRRA",
-        "BERRY_TYPE": "RASP",
-        "VARIETY_ID": "V9J",
-```
-
-| Agrian UI             | JSON                  | Example               |
-| -----------------     | -----------------     | -----------------     |
-| Season Start          |                       |                       |
-| Season End            |                       |                       |
-| Commodity             |                       |                       |
-| Variety               |                       |                       |
-| Name | APPLICATION_BLOCK_CODE + PLANT_YEAR_GROUPING + VARIETY | A12020KIRRA |
-| Code | APPLICATION_BLOCK_CODE + PLANT_YEAR_GROUPING + VARIETY | A12020KIRRA |
-| Field                 |                       |                       |
-| Date Planted          | PLANTING_DATE         | 01/01/2020            |
-| Planting Size         | HECTARES              | 1.25                  |
-| Traits                |                       |                       |
-| Growing Medium        |                       |                       |
-| Planting Method       |                       |                       |
-| Growing Method        |                       |                       |
-| Tillage Type          |                       |                       |
-| Intended Use          |                       |                       |
-| Status                |                       |                       |
-| Latitude              |                       | 19.31527              |
-| Longitude             |                       | -103.3715579631513    |
-
-- Seems Latitude is set to `19.315073` by default
-
-- Seems Longitude is set to `-103.371444` by default
-
-#### **NOTES**
-
-- As of right now County & States are only applicable to Mexico. Work is being done on US IDs; they will be genrated based on the incoming Atlas payload.
-
-- Updating Farms, Fields, & Plantings is not yet ready.
+| Agrian UI             | JSON                       | Old Results           | Updated Results      |
+| -----------------     | -----------------          | -----------------     | -----------------    |
+| Name                  | TRANSACTIONAL_RANCH_NAME   | LeftField Test #1     | LeftField Test #1    |
+| Code                  | TRANSACTIONAL_RANCH_NUMBER | 1313                  | 7777                 |
+| Field Size            | HECTARES                   | 1.94042370123863      | 5.1                  |
+| Status                |                            | Active                | Active               |
+| Growing Method        |                            | Conventional          | Conventional         |
+| State / Province      |                            | Acre                  | Acre                 |
+| County                |                            |                       |                      |
+| Location Description  |                            |                       |                      |
+| Latitude              | RANCH_LATITUDE             | 19.315073             | 37.233333            |
+| Longitude             | RANCH_LONGITUDE            | -103.371444           | -115.808333          |
+| Section               |                            |                       |                      |
+| Township              |                            |                       |                      |
+| Range                 |                            |                       |                      |
+| Baseline              |                            |                       |                      |
+| Commodity             |                            | Raspberry             | Raspberry            |
+![field-update-0](/screenshots/4_field-update-0.png?raw=true)
+![field-update-1](/screenshots/4_field-update-1.png?raw=true)
+![field-update-2](/screenshots/4_field-update-2.png?raw=true)
