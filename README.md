@@ -13,7 +13,7 @@
 
 | Atlas                 | Agrian                     |
 | -----------------     | -----------------          |
-| ![0-test](https://imgur.com/dDzRrEG.png) | ![2-test](https://imgur.com/DL4iK1z.png) |
+| ![0-test](https://imgur.com/dDzRrEG.png) | ![2-test](https://i.imgur.com/FPkjQiE.png) |
 
 ## **Farm**
 
@@ -39,7 +39,7 @@
 
 | Atlas                 | Agrian                     |
 | -----------------     | -----------------          |
-| ![5-test](https://imgur.com/uz1TTUP.png) | ![6-test](https://imgur.com/2x6mdyU.png) |
+| ![5-test](https://i.imgur.com/cbFoyZn.png) | ![6-test](https://i.imgur.com/yQKLwtX.png) |
 
 ## **Planting**
 
@@ -55,4 +55,4 @@
 
 | Atlas                 | Agrian                     |
 | -----------------     | -----------------          |
-| ![7-test](https://imgur.com/26jsGPa.png) | ![8-test](https://imgur.com/owLbxnI.png) |
+| ![7-test](https://i.imgur.com/y9oewP6.png) | ![8-test](https://i.imgur.com/3y8tF6P.png) |
