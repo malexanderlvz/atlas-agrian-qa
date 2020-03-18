@@ -13,7 +13,7 @@
 
 | Atlas                 | Agrian                     |
 | -----------------     | -----------------          |
-| ![0-test](/screenshots/final/0-test.png?raw=true) | ![2-test](/screenshots/final/2-test.png?raw=true) |
+| ![0-test](https://drive.google.com/open?id=1dzE_rjsXPUAfp6_LRq8PCiid8KaUg_7D?raw=true) | ![2-test](https://drive.google.com/open?id=1IXFK-egw7FriAnfE1ggc6dS4dLGr5f2Y?raw=true) |
 
 ## **Farm**
 
@@ -26,7 +26,7 @@
 
 | Atlas                 | Agrian                     |
 | -----------------     | -----------------          |
-|  ![9-test](/screenshots/final/9-test.png?raw=true) | ![4-test](/screenshots/final/4-test.png?raw=true) |
+|  ![9-test](https://drive.google.com/open?id=1Osk46B5t-ym8aXciWp8lx6-E7kpMVBOB?raw=true) | ![4-test](https://drive.google.com/open?id=1Z4JQtdbK6iXwQF6bJ5zFY8es9Rlq1pyV?raw=true) |
 
 ## **Field**
 
@@ -39,7 +39,7 @@
 
 | Atlas                 | Agrian                     |
 | -----------------     | -----------------          |
-| ![5-test](/screenshots/final/5-test.png?raw=true) | ![6-test](/screenshots/final/6-test.png?raw=true) |
+| ![5-test](https://drive.google.com/open?id=1oxDxjehTrIPdM7ialdUZwi9UVohkJlTJ?raw=true) | ![6-test](https://drive.google.com/open?id=13-xs4dVT72lEZgiq75sBOXvIUoGTWXFn?raw=true) |
 
 ## **Planting**
 
@@ -55,4 +55,4 @@
 
 | Atlas                 | Agrian                     |
 | -----------------     | -----------------          |
-| ![7-test](/screenshots/final/7-test.png?raw=true) | ![8-test](/screenshots/final/8-test.png?raw=true) |
+| ![7-test](https://drive.google.com/open?id=1-VdsPxahF0K5UvWv2zW_sMeiAY607WKE?raw=true) | ![8-test](https://drive.google.com/open?id=1oHs-c9B_r3_mN5-hzMLG8xO0yJnmx9GL?raw=true) |
